@@ -33,8 +33,8 @@ def progressBar(count,total,suffix=''):
 #===============================================	
 #Connection to Atoll	
 #===============================================	
-dsn_tns = cx_Oracle.makedsn('10.132.59.100','1521','ATOLLDB')
-conn = cx_Oracle.connect(user='FACTS_GSM', password='atoll', dsn=dsn_tns) 
+dsn_tns = cx_Oracle.makedsn('10.132.x.x','1521','ATOLLDB')
+conn = cx_Oracle.connect(user='x', password='x', dsn=dsn_tns) 
   
 CF_LTE_BAND=3500 
 print('Hi there')
@@ -95,7 +95,7 @@ Tx['HEIGHT']=Tx['HEIGHT'].astype('float64', errors='ignore')
 print(datetime.datetime.now())
 suc=0
 fail=0
-connection = pyodbc.connect(r'Driver={Microsoft Access Driver (*.mdb, *.accdb)};DBQ=R:\FIBOT_DB.accdb;PWD=babimetro;')
+connection = pyodbc.connect(r'Driver={Microsoft Access Driver (*.mdb, *.accdb)};DBQ=R:\FIBOT_DB.accdb;PWD=xx;')
 le=len(site)
 print('lent:'+str(le))
 sql="""insert into [site list](SiteName,Technology,Status,2G_Status,Planned_Config,Current_Config,Latitude,Longitude,New_Region
